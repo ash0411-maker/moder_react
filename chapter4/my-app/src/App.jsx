@@ -1,19 +1,18 @@
 import React from 'react'
+import { ColoredMessage } from './components/ColoredMessage';
 
 export const App = () => {
   const onClickButton = () => {
     alert("クリックされた")
   };
 
-  const contentStyle = {
-    color: "blue",
-    fontSize: "20px"
-  }
-
   return (
     <>
-      <h1 style={{ color: "red" }}>h1タグ</h1>
-      <p style={contentStyle}>pタグ</p>
+      <h1 style={{ color: "red" }}>こんにちは</h1>
+
+      <ColoredMessage color="blue" message="お元気ですか？ => props" />
+      <ColoredMessage color="pink" message="元気です。 => props" />
+
       <button onClick={onClickButton}>ボタン</button>
     </>
   );
