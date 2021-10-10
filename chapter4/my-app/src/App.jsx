@@ -10,8 +10,8 @@ export const App = () => {
     <>
       <h1 style={{ color: "red" }}>こんにちは</h1>
 
-      <ColoredMessage color="blue" message="お元気ですか？ => props" />
-      <ColoredMessage color="pink" message="元気です。 => props" />
+      <ColoredMessage color="blue">お元気ですか？ => props</ColoredMessage>
+      <ColoredMessage color="pink">元気です。 => props</ColoredMessage>
 
       <button onClick={onClickButton}>ボタン</button>
     </>
