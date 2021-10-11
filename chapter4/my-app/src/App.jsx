@@ -1,13 +1,17 @@
 import React from 'react'
 import { useState } from 'react'
+import { useEffect } from 'react'
 import { ColoredMessage } from './components/ColoredMessage';
 
 export const App = () => {
   const [num, setNum] = useState(0);
-
   const onClickButton = () => {
     setNum((num) => num + 1);
   };
+
+  useEffect(() => {
+    alert();
+  }, [num]);
 
   return (
     <>
