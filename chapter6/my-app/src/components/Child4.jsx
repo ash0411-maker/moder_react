@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, memo } from 'react'
 
 const contentStyle = {
   height: "50px",
@@ -6,7 +6,7 @@ const contentStyle = {
   padding: "8px"
 };
 
-export const Child4 = (props) => {
+export const Child4 = memo((props) => {
   console.log("Child4 レンダリング")
 
   return (
@@ -14,4 +14,4 @@ export const Child4 = (props) => {
       <p>Child4</p>
     </div>
   )
-}
+});

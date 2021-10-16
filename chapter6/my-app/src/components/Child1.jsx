@@ -1,4 +1,5 @@
-import React from 'react'
+import { React, memo } from 'react'
+
 import { Child2 } from './Child2';
 import { Child3 } from './Child3';
 
@@ -8,7 +9,7 @@ const contentStyle = {
   padding: "8px"
 };
 
-export const Child1 = (props) => {
+export const Child1 = memo(() => {
   console.log("Child1 レンダリング")
 
   return (
@@ -18,4 +19,4 @@ export const Child1 = (props) => {
       <Child3 />
     </div>
   )
-}
+});
